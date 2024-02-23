@@ -6,6 +6,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 /* ======================================HEADER================================================ */
 
@@ -15,7 +16,7 @@ body {
 }
 
 .header-container__nav {
-  width: 90%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -67,6 +68,7 @@ body {
   left: 10%; */
   margin-right: 0.5rem;
   border: 0;
+  cursor: pointer;
 }
 
 .search-bar img {
@@ -186,10 +188,189 @@ a:active {
 
 /* =========================HERO SECTION======================================= */
 
-/* .hero-container {
+.hero,
+.img {
   width: 100%;
   height: 36rem;
   background-color: #cadeff;
-  display: flex;
   position: relative;
-} */
+}
+
+.img {
+  opacity: 0.1;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -0%;
+}
+
+.hero-container h1 {
+  font-family: "Lato", sans-serif;
+  color: #141414;
+  font-weight: 700;
+  font-size: 3.125rem;
+  margin-bottom: 0.5rem;
+  line-height: 4.3125rem;
+}
+
+.hero-container span {
+  color: #256ee4;
+  font-style: italic;
+}
+
+.hero-container p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0.5rem;
+  line-height: 30px;
+}
+
+.hero-container__text {
+  margin-top: 3rem;
+  margin-left: 3rem;
+
+  padding: 10px;
+}
+
+.hero-container button {
+  margin-top: 0.5rem;
+}
+
+.topproducts-container {
+  background-color: #f2f7ff;
+  width: 90rem;
+  height: 36.375rem;
+  position: relative;
+}
+
+.topproducts__payment {
+  width: 73rem;
+  height: 8rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  position: absolute;
+  top: -5%;
+  margin-left: 5rem;
+}
+
+.tp {
+  width: 64.5rem;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-line {
+  height: 8rem;
+  border-left: 1px solid #e5efff;
+  margin-right: 1rem;
+}
+
+.payment__card {
+  display: inline-flex;
+}
+
+.payment__card a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.card-text h1 {
+  font-size: 18px;
+}
+
+.card-text p {
+  font-size: 16px;
+}
+
+.payment__card img {
+  float: left;
+  width: 34px;
+  height: 34px;
+}
+
+.card-img {
+  padding-right: 10px;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+.container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.topSellingPtoducts-container {
+  width: 80rem;
+  height: 17.43375rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.topSellingProducts {
+  width: 17.375rem;
+  height: 16.125;
+  background-color: white;
+  border-radius: 5px;
+}
+.topSellingProducts img {
+  width: 15.4375rem;
+  height: 10.0625rem;
+}
+.float {
+  float: right;
+  color: #256ee4;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.lineThru {
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cccccc;
+}
+
+.topTexts {
+  margin: 10px;
+  padding: 10px;
+}
+
+.topTexts h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.topTexts p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.0162em;
+  text-align: left;
+  color: #141414;
+}
