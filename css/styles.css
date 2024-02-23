@@ -142,6 +142,7 @@ input {
   border-radius: 0.3125rem;
   color: #256ee4;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .btn {
@@ -465,4 +466,82 @@ a:active {
 
 .texts {
   margin-left: 2rem;
+}
+
+.texts a {
+  text-decoration: none;
+}
+
+.ads-container {
+  width: 80rem;
+  height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.25rem;
+  flex-wrap: wrap;
+}
+
+.ads1 {
+  width: 80rem;
+  height: 22rem;
+  background-image: url(../Img/flier.png);
+}
+
+.ads2 {
+  width: 39rem;
+  height: 16.4rem;
+  background-image: url(../Img/2.png);
+  position: relative;
+}
+
+.writeup {
+  width: 18rem;
+  height: 11.34rem;
+  /* background-color: red; */
+  position: absolute;
+  top: 26%;
+  margin-left: 1.5rem;
+}
+
+.writeup1 {
+  position: absolute;
+  top: 26%;
+}
+
+.ads-p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  margin-top: 0.5rem;
+  padding: 5px;
+}
+
+.ads-h4 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+
+  text-align: left;
+  color: white;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+}
+
+.ads3 {
+  width: 39rem;
+  height: 16.4rem;
+  background-image: url(../Img/3.png);
+  position: relative;
+}
+
+.btns {
+  width: 11rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 6px;
+  color: #256ee4;
+  cursor: pointer;
 }
