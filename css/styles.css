@@ -309,7 +309,7 @@ a:active {
   top: 40%;
 }
 
-.container h3 {
+.subheadings {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -421,12 +421,12 @@ a:active {
 }
 
 .moreFromMyspace-container h3 {
-  font-size: 24px;
+  /* font-size: 24px;
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0px;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem; */
   position: absolute;
   top: 15%;
   left: 40%;
@@ -544,4 +544,56 @@ a:active {
   border-radius: 6px;
   color: #256ee4;
   cursor: pointer;
+}
+
+/* ===============================FRESH DEALS SECTION==============================================  */
+.freshDeals-section {
+  width: 80rem;
+  height: 44.3rem;
+  background-color: #f2f7ff77;
+  margin-left: 2.25rem;
+  margin-top: 2rem;
+}
+
+.freshDeals {
+  width: 16rem;
+  height: 17.3rem;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.freshDeals img {
+  padding: 5px;
+  margin-top: 0.5rem;
+  height: 10rem;
+  width: 15rem;
+}
+
+.freshDeals p {
+  color: #256ee4;
+}
+
+.ratings {
+  color: #fe9b0e;
+}
+
+i {
+  color: #141414;
+  width: 2rem;
+  height: 2rem;
+}
+
+.freshDeals-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.dc {
+  position: absolute;
+  top: 10%;
+  margin: 10px;
 }
