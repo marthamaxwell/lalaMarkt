@@ -6,6 +6,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 /* ======================================HEADER================================================ */
 
@@ -182,4 +183,90 @@ a:active {
   border: none;
   background: transparent;
   color: #7a7a7a;
+}
+
+/* ==========================WHO WE ARE SECTION================================ */
+
+.whoAreWe-container {
+  width: 85rem;
+  height: 50rem;
+  background-image: url(./Img/imge.png);
+
+  position: relative;
+
+  align-items: center;
+}
+.whoAreWe-intro {
+  width: 45rem;
+  height: 7rem;
+  /* background-color: #7a7a7a; */
+  position: absolute;
+  top: 13%;
+  text-align: center;
+  left: 25%;
+}
+
+.whoAreWe-intro p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  color: #256ee4;
+  margin-bottom: 1rem;
+}
+
+.whoAreWe-intro h4 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+
+.whoAreWe-img img {
+  width: 37.4rem;
+  height: 28rem;
+  margin-right: 2.5rem;
+}
+
+.whoAreWe-texts {
+  margin-top: 1.3rem;
+}
+
+.textImg-container {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  width: 80rem;
+  height: 32rem;
+  /* background-color: red; */
+  margin-left: 2.25rem;
+  padding: 2rem;
+}
+
+li,
+.textImg-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: justify;
+}
+
+.reduced-margin {
+  margin-bottom: 1rem;
+}
+
+.fas {
+  color: #256ee4;
+  margin-right: 0.5rem;
+}
+
+ol {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
 }
