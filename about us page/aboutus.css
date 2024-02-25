@@ -481,3 +481,9 @@ footer p {
 button:hover {
   opacity: 0.8;
 }
+
+.quick-links a,
+.support a {
+  text-decoration: none;
+  color: #141414;
+}
