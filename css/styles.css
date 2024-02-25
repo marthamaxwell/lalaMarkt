@@ -907,14 +907,15 @@ button:hover {
 
 /* ======================================MEDIA QUERY============================== */
 
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   body {
     font-family: "Lato", sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 
   .hero {
     position: relative;
+    display: inline-flex;
   }
 
   .hero img {
@@ -922,14 +923,14 @@ button:hover {
   }
 
   .hero-container__text {
-    /* background-color: red; */
+    background-color: red;
     position: absolute;
     left: 9%;
   }
 
   .hero button {
     margin-top: 1rem;
-  }
+  } */
 
   /* ================top products======================== */
 
