@@ -438,7 +438,7 @@ footer p {
 
 .fab {
   color: #256ee4;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .email {
@@ -476,6 +476,7 @@ footer p {
   font-weight: 400;
   line-height: 1.8rem;
   letter-spacing: 0em;
+  padding-bottom: 10px;
 }
 
 button:hover {

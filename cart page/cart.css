@@ -190,19 +190,29 @@ a:active {
 }
 
 /* =============================CART SECTION======================= */
+.sub-heading {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #b8b8b8;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
 
 .cart-section {
   width: 80rem;
   height: 42rem;
-  background-color: yellow;
+  /* background-color: red; */
   margin: auto auto;
   position: relative;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .cartListItems {
   width: 14rem;
-  height: 41.4rem;
+  height: 41.6rem;
   background-color: white;
   position: absolute;
   left: 3%;
@@ -217,6 +227,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .items {
@@ -248,7 +259,7 @@ a:active {
 }
 
 .logOut {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-left: 1rem;
 }
 .cartListItems ul {
@@ -258,23 +269,196 @@ a:active {
 .cartHeading {
   width: 60rem;
   height: 4rem;
-  background: #000;
+  background: white;
   position: absolute;
   top: 0%;
   left: 22%;
+  position: relative;
+}
+
+.cartHeading h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  letter-spacing: 0px;
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 35%;
 }
 
 .emptyCart-container {
   width: 60rem;
   height: 37.3rem;
-  background: #256ee4;
+  background: white;
   position: absolute;
-  top: 10%;
+  top: 1%;
   left: 22%;
+  position: relative;
+}
+
+.emptyCart {
+  width: 19rem;
+  height: 18.1rem;
+  background-color: white;
+  position: absolute;
+  top: 29%;
+  left: 33%;
+  text-align: center;
+}
+
+.emptyCart h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: #141414;
+}
+
+.emptyCart p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.emptyCart button {
+  width: 13rem;
+  height: 3.3rem;
+  padding: 14px, 51px, 14px, 51px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #256ee4;
 }
 
 .cartListItems,
 .cartHeading,
 .emptyCart-container {
   border-radius: 5px;
+}
+
+/* =====================================FOOTER============================================ */
+
+footer {
+  max-width: 85rem;
+  height: 22.3rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+  padding-top: 2rem;
+}
+
+footer h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  margin-bottom: 1rem;
+}
+
+footer h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  letter-spacing: 0em;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  letter-spacing: 0em;
+  margin-bottom: 1rem;
+}
+
+.brand {
+  padding: 0;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.together {
+  margin-bottom: 0.4rem;
+}
+
+.connect {
+  position: absolute;
+  right: 35%;
+  bottom: 5%;
+}
+
+.deals {
+  margin-top: 5rem;
+}
+
+.address,
+.quick-links,
+.support {
+  margin-top: 2rem;
+}
+
+.fab {
+  color: #256ee4;
+  margin-left: 0.5rem;
+}
+
+.email {
+  width: 15.3rem;
+  height: 3rem;
+  background-color: #f2f2f2;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #f2f2f2;
+  text-indent: 2rem;
+}
+
+.email::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  padding-left: 0.5rem;
+  color: #e0e0e0;
+}
+
+.deals button {
+  width: 8rem;
+  height: 3rem;
+  margin-left: -2%;
+  color: white;
+  background-color: #256ee4;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.rights {
+  text-align: center;
+
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  margin-top: 0.8rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.quick-links a,
+.support a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.white {
+  background-color: white;
+  padding: 10px;
+}
+
+.footer-line {
+  margin: 0;
 }
