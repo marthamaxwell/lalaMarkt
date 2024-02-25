@@ -232,6 +232,7 @@ a:active {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .form-container h6 {
@@ -294,6 +295,30 @@ a:active {
   background-color: #256ee4;
   border: none;
   border-radius: 5px;
+}
+
+.big {
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+}
+
+.left-small {
+  position: absolute;
+  bottom: 4%;
+  left: -10%;
+}
+
+.right-small {
+  position: absolute;
+  bottom: 4%;
+  left: 30%;
+}
+
+.right-top-small {
+  position: absolute;
+  top: -8%;
+  right: -18%;
 }
 
 /* =============================MYSPACE sECTION============================ */
