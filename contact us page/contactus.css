@@ -11,12 +11,12 @@ body {
 /* ======================================HEADER================================================ */
 
 .header-container {
-  width: 100vw;
-  height: 30vh;
+  width: 100%;
+  height: 30%;
 }
 
 .header-container__nav {
-  width: 90%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -68,6 +68,7 @@ body {
   left: 10%; */
   margin-right: 0.5rem;
   border: 0;
+  cursor: pointer;
 }
 
 .search-bar img {
@@ -141,6 +142,7 @@ input {
   border-radius: 0.3125rem;
   color: #256ee4;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .btn {
@@ -185,195 +187,173 @@ a:active {
   color: #7a7a7a;
 }
 
-/* ==========================WHO WE ARE SECTION================================ */
+/* ===============================CONTACT US SECTION================================ */
 
-.whoAreWe-container {
-  width: 85rem;
-  height: 50rem;
-  background-image: url(./Img/imge.png);
-  margin-bottom: 4rem;
+.contactUs-container {
+  width: 90rem;
+  height: 13.3rem;
+  background-image: url(../Img/App\ frame.png);
   position: relative;
-
-  align-items: center;
-}
-.whoAreWe-intro {
-  width: 45rem;
-  height: 7rem;
-  /* background-color: #7a7a7a; */
-  position: absolute;
-  top: 13%;
-  text-align: center;
-  left: 25%;
+  margin-bottom: 6rem;
 }
 
-.whoAreWe-intro p {
+.parag {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 570;
   line-height: 1.5rem;
   letter-spacing: 0px;
-  color: #3785f7;
-  margin-bottom: 1rem;
-}
-
-.whoAreWe-intro h4 {
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 46px;
-  letter-spacing: 0em;
+  /* color: #3785f7; */
   text-align: center;
-  color: black;
 }
 
-.whoAreWe-img img {
-  width: 37.4rem;
-  height: 28rem;
-  margin-right: 2.5rem;
-}
-
-.whoAreWe-texts {
-  margin-top: 1.3rem;
-}
-
-.textImg-container {
-  position: absolute;
-  bottom: 1%;
-  display: flex;
-  width: 80rem;
-  height: 32rem;
-  /* background-color: red; */
-  margin-left: 2.25rem;
-  padding: 2rem;
-}
-
-li,
-.textImg-container p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0em;
-  text-align: justify;
-}
-
-.reduced-margin {
-  margin-bottom: 1rem;
-}
-
-.fas {
-  color: #256ee4;
-  margin-right: 0.5rem;
-}
-
-ol {
-  list-style: none;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-/* ===============================WHAT WE DO SECTION================================ */
-
-.whatWeDo-Container {
-  width: 80rem;
-  height: 30rem;
-  /* background-color: red; */
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.whatWeDo-texts {
-  margin-left: 1.5rem;
-  margin-right: 2rem;
-}
-
-.span {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #3785f7;
-  margin-bottom: 4rem;
-}
-
-.whatWeDoH4 {
-  color: #121212;
+.texth4 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.8rem;
+  line-height: 3rem;
   letter-spacing: 0em;
-  text-align: left;
-  margin: 2rem 0;
+  text-align: center;
+  color: #141414;
 }
 
-.whatWeDoP {
-  color: #121212;
-  font-size: 1.1rem;
+.contactUs-texts {
+  width: 28rem;
+  height: 6rem;
+  padding-top: 2rem;
+  position: absolute;
+  left: 30%;
+}
+
+/* ================================FORM SECTION========================== */
+
+.form-container {
+  width: 61.1rem;
+  height: 43rem;
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container h6 {
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0em;
+  text-align: left;
+  color: #141414;
+}
 
-  margin-bottom: 1.5rem;
+.form-container h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.form-container p {
+  margin-top: 0;
+}
+
+.form {
+  width: 26.5rem;
+  height: 37rem;
+  /* background-color: #256ee4; */
+}
+
+.left {
+  text-align: left;
+}
+.size {
+  display: block;
+  width: 26rem;
+  height: 3rem;
+  padding: 29px 21px;
+  border-radius: 5px;
+  border: 1px solid #141414;
+  /* gap: 10px */
+  opacity: 0.7px;
+  margin-top: 1rem;
+}
+
+.textarea {
+  width: 26.5rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.textarea::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form button {
+  width: 9.3rem;
+  height: 3.3rem;
+  color: white;
+  background-color: #256ee4;
+  border: none;
+  border-radius: 5px;
+}
+
+/* =============================MYSPACE sECTION============================ */
+.myspace-mobile-container {
+  width: 90rem;
+  height: 24rem;
+  background-image: url(../Img/App\ frame.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.myspace-mobile {
+  width: 38rem;
+  height: 17rem;
+  /* background-color: white; */
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 20px;
+}
+
+.smartphone {
+  position: absolute;
+  top: 10%;
+  right: 9%;
+}
+
+.myspace-mobile p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin-bottom: 1rem;
   text-align: justify;
+  color: #141414;
 }
 
-/* ==============================MARKET PLACE SECTION============================= */
-
-.marketPlace-container {
-  margin: 5rem 0;
-  /* background-color: #3785f7; */
-  height: 22rem;
+.myspace-mobile h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.marketPlace-img img {
-  /* margin-right: 2rem; */
-  margin-left: 0;
-  width: 33rem;
+.myspace-mobile img {
+  margin-bottom: 0.5rem;
 }
 
-.marketPlace-texts {
-  width: 37rem;
-  margin-top: auto;
-  margin-bottom: auto;
+.blue {
+  color: #256ee4;
 }
 
-.marketPlace-texts h4 {
-  margin-top: 0.3rem;
-  line-height: 1.2;
+.margin {
+  margin-left: 1rem;
 }
 
-/* ==================MEET THE TEAM SECTION======================= */
-
-.meetTeam-container {
-  width: 80rem;
-  height: 70rem;
-  /* background-color: red; */
-  margin: 0 auto;
-}
-
-.meetTeam-headings {
-  text-align: center;
-}
-.meetTeam-headings h4 {
-  margin-top: 0.4rem;
-  text-align: center;
-}
-
-.meetTeam {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.5rem;
-  margin-top: 4rem;
-  margin-left: 2rem;
-}
-
-.meetTeam img {
-  width: 23rem;
-  height: 28rem;
-}
-/* =================================FOOTER================================= */
+/* =====================================FOOTER============================================ */
 
 footer {
   max-width: 85rem;
@@ -428,6 +408,7 @@ footer p {
 
 .deals {
   margin-top: 5rem;
+  position: relative;
 }
 
 .address,
@@ -467,6 +448,10 @@ footer p {
   background-color: #256ee4;
   border: none;
   border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  right: 3%;
+  top: 28%;
+  left: 80%;
 }
 
 .rights {
