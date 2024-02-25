@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>lalaMarkt</title>
   </head>
   <body>
@@ -61,5 +68,58 @@
         </nav>
       </div>
     </header>
+
+    <!-- ===============================CART SECTION============================== -->
+    <h6>Home > <span>Shopping Cart</span></h6>
+    <section class="cart-section">
+      <div class="cartListItems">
+        <div class="cartList">
+          <div class="items">
+            <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+          </div>
+
+          <div class="items itemsColor">
+            <a href="#" style="color: #256ee4"
+              ><i style="color: #256ee4" class="fa-solid fa-cart-shopping"></i
+              >Cart</a
+            >
+          </div>
+
+          <div class="items">
+            <a href="#"><i class="fa-solid fa-box"></i>My Orders</a>
+          </div>
+
+          <div class="items">
+            <a href="#"><i class="fa-regular fa-heart"></i>My Wishlist</a>
+          </div>
+
+          <div class="items">
+            <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
+          </div>
+
+          <div class="items">
+            <a href="#"><i class="fa-solid fa-wallet"></i>Wallet</a>
+          </div>
+
+          <div class="items">
+            <a href="#"
+              ><i class="fa-solid fa-file-invoice"></i>Settle Invoice</a
+            >
+          </div>
+
+          <div class="items">
+            <a href="#"><i class="fa-solid fa-wallet"></i>Bill Payment</a>
+          </div>
+        </div>
+        <div class="logOut items">
+          <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+      </div>
+
+      <div class="cartHeading">
+        <h5>Shopping cart</h5>
+      </div>
+      <div class="emptyCart-container"></div>
+    </section>
   </body>
 </html>
