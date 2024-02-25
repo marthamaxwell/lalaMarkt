@@ -191,7 +191,7 @@ a:active {
   width: 85rem;
   height: 50rem;
   background-image: url(./Img/imge.png);
-
+  margin-bottom: 4rem;
   position: relative;
 
   align-items: center;
@@ -211,7 +211,7 @@ a:active {
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0px;
-  color: #256ee4;
+  color: #3785f7;
   margin-bottom: 1rem;
 }
 
@@ -270,3 +270,78 @@ ol {
 li {
   margin-bottom: 1rem;
 }
+
+/* ===============================WHAT WE DO SECTION================================ */
+
+.whatWeDo-Container {
+  width: 80rem;
+  height: 30rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.whatWeDo-texts {
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+}
+
+.span {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #3785f7;
+  margin-bottom: 4rem;
+}
+
+.whatWeDoH4 {
+  color: #121212;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.whatWeDoP {
+  color: #121212;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* ==============================MARKET PLACE SECTION============================= */
+
+.marketPlace-container {
+  margin-top: 5rem;
+  /* background-color: #3785f7; */
+  height: 22rem;
+}
+
+.marketPlace-img img {
+  /* margin-right: 2rem; */
+  margin-left: 0;
+  width: 33rem;
+}
+
+.marketPlace-texts {
+  width: 37rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.marketPlace-texts h4 {
+  margin-top: 0.3rem;
+  line-height: 1.2;
+}
+
+/* ==================MEET THE TEAM SECTION======================= */
