@@ -261,12 +261,12 @@ height: 36rem;
   height: 8rem;
   border-radius: 0.625rem;
   background-color: white;
-  /* position: absolute;
-  top: -5%; */
- /* left: 15%; */
-margin-top: 10%;
+  position: absolute;
+  top: -5%;
+ left: 15%;
+/* margin-top: 10%;
 margin-left: auto;
-margin-right: auto;
+margin-right: auto; */
 }
 
 .tp {
@@ -992,5 +992,5 @@ button:hover {
     position: absolute;
     left: 33%;
     top: -5%;
-  }*/
+  }
 }
