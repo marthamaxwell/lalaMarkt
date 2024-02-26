@@ -13,6 +13,10 @@ body {
 .header-container {
   width: 100%;
   height: 30%;
+  /* position: fixed;
+  z-index: 1; */
+  /* background-color: #cd6a01; */
+  margin-bottom: 1rem;
 }
 
 .header-container__nav {
@@ -22,7 +26,8 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 4rem;
-  position: relative;
+  /* position: relative; */
+  padding-bottom: 1rem;
 }
 
 .nav__brand img {
@@ -153,13 +158,14 @@ input {
 .line {
   width: 100%;
   border: 1px solid #e0e0e0;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .header-container__2ndnav {
   height: 1.8125rem;
-
+  background-color: white;
   margin: 0 auto;
+  padding-top: 12px ;
 }
 
 nav {
@@ -190,7 +196,7 @@ a:active {
 /* =========================HERO SECTION======================================= */
 
 .hero {
-  width: 90rem;
+  width: 100%;
   height: 36rem;
 
   background-image: url(../Img/App\ frame.png);
@@ -198,6 +204,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .hero h1 {
@@ -236,11 +243,15 @@ a:active {
   margin-top: 0.5rem;
 }
 
+.hero img{
+margin-top: 0.2rem;
+height: 36rem;
+}
 /* =====================================TOP PRODUCTS========================= */
 
 .topproducts-container {
   background-color: #f2f7ff;
-  width: 90rem;
+  width: 100%;
   height: 36.375rem;
   position: relative;
 }
@@ -250,9 +261,12 @@ a:active {
   height: 8rem;
   border-radius: 0.625rem;
   background-color: white;
-  position: absolute;
-  top: -5%;
-  margin-left: 5rem;
+  /* position: absolute;
+  top: -5%; */
+ /* left: 15%; */
+margin-top: 10%;
+margin-left: auto;
+margin-right: auto;
 }
 
 .tp {
@@ -408,6 +422,10 @@ a:active {
 .bg {
   opacity: 0.02;
 }
+/* ========================= more from my space========================= */
+.moreFromMyspace-container{
+  width: 100%;
+}
 
 .mySpace {
   position: absolute;
@@ -477,11 +495,11 @@ a:active {
 /* ===============================ADS CONTAINER======================================= */
 
 .ads-container {
-  width: 80rem;
+  width: 95%;
   height: 40rem;
   display: flex;
   justify-content: space-between;
-  margin-left: 2.25rem;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -552,10 +570,10 @@ a:active {
 
 /* ===============================FRESH DEALS SECTION==============================================  */
 .freshDeals-section {
-  width: 80rem;
+  width: 95%;
   height: 44.3rem;
   background-color: #f2f7ff77;
-  margin-left: 2.25rem;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -605,10 +623,10 @@ i {
 /* ============================================FLYER SECTION=================================== */
 
 .flyer {
-  width: 80rem;
+  width: 95%;
   height: 19.4rem;
   background-color: #f4ebe8;
-  margin-left: 2.25rem;
+  margin: 0 auto;
   position: relative;
   margin-top: 3rem;
 }
@@ -660,9 +678,10 @@ i {
 /* ================================MYSPACE SECTION=================================================== */
 
 .mispace {
-  width: 90rem;
-  height: 42rem;
+  width: 100%;
+  height: 43rem;
   margin-top: 4rem;
+
 }
 
 .myspace-mobile-container {
@@ -722,11 +741,14 @@ i {
 }
 
 .myspace-contact {
-  width: 80rem;
+  width: 70rem;
   height: 18.3rem;
   background-image: url(../Img/Frame\ 8180.png);
-  margin-left: 2.5rem;
-
+  margin-left:auto;
+  margin-right: auto;
+  background-size: cover;
+  border-radius: 5px;
+ 
   position: relative;
 }
 
@@ -792,7 +814,7 @@ b {
 /* =====================================FOOTER============================================ */
 
 footer {
-  max-width: 85rem;
+  max-width: 100%;
   height: 22.3rem;
   background-color: white;
   display: flex;

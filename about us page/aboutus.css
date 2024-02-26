@@ -376,7 +376,7 @@ li {
 /* =================================FOOTER================================= */
 
 footer {
-  max-width: 85rem;
+  max-width: 100%;
   height: 22.3rem;
   background-color: white;
   display: flex;
