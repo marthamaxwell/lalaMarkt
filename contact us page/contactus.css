@@ -499,3 +499,151 @@ button:hover {
   text-decoration: none;
   color: #141414;
 }
+
+
+/* ======================================MEDIA QUERY============================== */
+
+@media only screen and (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container__nav {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    position: relative;
+
+    /* background-color: yellow; */
+  }
+
+  nav a {
+    margin-right: 1rem;
+  }
+
+  .nav__brand {
+  }
+
+  .nav__brand h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    position: absolute;
+    left: 5%;
+    top: 55%;
+  }
+  /* .query-btn {
+    width: 7.6875rem;
+    height: 3.3125rem;
+    border: 1px solid white;
+    background-color: #256ee4;
+    border-radius: 0.3125rem;
+    color: #256ee4;
+    margin: 0 5px;
+    cursor: pointer;
+  } */
+
+  .search-bar {
+    width: 16rem;
+
+    margin-left: 33rem;
+
+    position: relative;
+  }
+
+  .search-bar button,
+  .search-bar img {
+  }
+
+  input {
+    width: 8rem;
+  }
+
+  ::placeholder {
+    visibility: collapse;
+  }
+
+  .nav__dropdown {
+    visibility: hidden;
+  }
+
+  .nav__cart {
+    visibility: collapse;
+  }
+
+  nav a {
+    margin-right: 0.5rem;
+  }
+
+  .form-container {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 55rem;
+  }
+
+  .form, .form-address{
+    margin-left: 6rem;
+  }
+  .right-small {
+    left: 65%;
+    top: 9%;
+   
+  }
+
+  .big, .left-small, .right-top-small {
+    visibility: hidden;
+  }
+
+
+
+
+
+
+  
+  .myspace-mobile-container {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .myspace-mobile {
+    left: 2%;
+  }
+
+ 
+  .smartphone {
+    width: 0rem;
+    height: 0rem;
+    visibility: hidden;
+  }
+footer {
+  /* background-color: red; */
+  flex-wrap: wrap;
+  height: 40rem;
+}
+
+/* .together1 {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+} */
+
+.brand {
+  position: absolute;
+  bottom: 60%;
+  margin-bottom: 0;
+}
+
+.deals {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  bottom: 25%;
+}
+
+.connect {
+  bottom: 10%;
+  left: 22%;
+}
+
+.fab {
+  margin-left: 2rem;
+}
