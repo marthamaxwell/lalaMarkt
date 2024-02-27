@@ -958,9 +958,6 @@ button:hover {
     margin-right: 1rem;
   }
 
-  .nav__brand {
-  }
-
   .nav__brand h1 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -986,10 +983,6 @@ button:hover {
     margin-left: 33rem;
 
     position: relative;
-  }
-
-  .search-bar button,
-  .search-bar img {
   }
 
   input {
@@ -1139,9 +1132,6 @@ button:hover {
     height: 80rem;
     /* background-color: #256ee4; */
     margin: 0 auto;
-  }
-
-  .flyer {
   }
 
   .flyer img {

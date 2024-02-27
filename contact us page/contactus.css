@@ -500,7 +500,6 @@ button:hover {
   color: #141414;
 }
 
-
 /* ======================================MEDIA QUERY============================== */
 
 @media only screen and (max-width: 750px) {
@@ -518,9 +517,6 @@ button:hover {
 
   nav a {
     margin-right: 1rem;
-  }
-
-  .nav__brand {
   }
 
   .nav__brand h1 {
@@ -550,10 +546,6 @@ button:hover {
     position: relative;
   }
 
-  .search-bar button,
-  .search-bar img {
-  }
-
   input {
     width: 8rem;
   }
@@ -580,25 +572,21 @@ button:hover {
     height: 55rem;
   }
 
-  .form, .form-address{
+  .form,
+  .form-address {
     margin-left: 6rem;
   }
   .right-small {
     left: 65%;
     top: 9%;
-   
   }
 
-  .big, .left-small, .right-top-small {
+  .big,
+  .left-small,
+  .right-top-small {
     visibility: hidden;
   }
 
-
-
-
-
-
-  
   .myspace-mobile-container {
     width: 100%;
     height: 30rem;
@@ -608,42 +596,42 @@ button:hover {
     left: 2%;
   }
 
- 
   .smartphone {
     width: 0rem;
     height: 0rem;
     visibility: hidden;
   }
-footer {
-  /* background-color: red; */
-  flex-wrap: wrap;
-  height: 40rem;
-}
+  footer {
+    /* background-color: red; */
+    flex-wrap: wrap;
+    height: 40rem;
+  }
 
-/* .together1 {
+  /* .together1 {
   position: absolute;
   top: 10%;
   left: 1%;
 } */
 
-.brand {
-  position: absolute;
-  bottom: 60%;
-  margin-bottom: 0;
-}
+  .brand {
+    position: absolute;
+    bottom: 60%;
+    margin-bottom: 0;
+  }
 
-.deals {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  position: absolute;
-  bottom: 25%;
-}
+  .deals {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    bottom: 25%;
+  }
 
-.connect {
-  bottom: 10%;
-  left: 22%;
-}
+  .connect {
+    bottom: 10%;
+    left: 22%;
+  }
 
-.fab {
-  margin-left: 2rem;
+  .fab {
+    margin-left: 2rem;
+  }
 }
