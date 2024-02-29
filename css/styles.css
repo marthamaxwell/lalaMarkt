@@ -505,7 +505,7 @@ margin-right: auto; */
 }
 
 .ads1 {
-  width: 80rem;
+  width: 95rem;
   height: 22rem;
   background-image: url(../Img/flier.png);
 }
@@ -940,8 +940,340 @@ button:hover {
 }
 
 /* ======================================MEDIA QUERY============================== */
+/*mobile*/
+@media only screen and (max-width: 400px) {
+  .header-container {
+    width: 100%;
+    height: 40%;
+    /* position: fixed;
+    z-index: 1; */
+    position: relative;
+    background-color: #cd6a01;
+  }
 
-@media only screen and (max-width: 750px) {
+  .header-container__nav {
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+    /* position: relative; */
+  }
+
+  .nav__brand h1 {
+    font-size: 1rem;
+  }
+
+  .search-bar {
+    width: 8rem;
+  }
+
+  /*hero*/
+  .hero-container__text {
+    width: 15rem;
+    height: 25rem;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    padding: 5px;
+  }
+
+  .hero button {
+    position: absolute;
+    left: 20%;
+    margin-top: 1rem;
+  }
+
+  .hero img {
+    width: 0;
+    height: 0;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 3rem;
+  }
+
+  /*Top products*/
+
+  .topproducts-container {
+    height: 100rem;
+  }
+
+  .topproducts__payment {
+    width: 70%;
+    /* background-color: #256ee4; */
+    left: 13%;
+    top: -2%;
+
+    height: 23rem;
+  }
+
+  .container {
+    top: 25%;
+  }
+
+  .tp {
+    width: 75%;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    height: 20rem;
+    margin-top: 1.3rem;
+  }
+
+  .card-line {
+    width: 0;
+    height: 0;
+  }
+
+  .topSellingPtoducts-container {
+    /* background-color: #256ee4; */
+    flex-wrap: wrap;
+    width: 77%;
+    height: 70rem;
+    margin: 0 auto;
+  }
+
+  .topSellingProducts {
+    margin: 0 auto;
+  }
+
+  .discount {
+    top: 8%;
+  }
+
+  .disC {
+    top: 31%;
+  }
+
+  .found {
+  }
+
+  /*More from my space*/
+
+  .moreFromMyspace-container {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 87rem;
+  }
+
+  .bg {
+    width: 0;
+    height: 0;
+  }
+
+  .mySpace {
+    width: 77%;
+    height: 80rem;
+    /* background-color: #256ee4; */
+    flex-wrap: wrap;
+    top: 6%;
+    left: -4%;
+  }
+
+  .moreFromMyspace-container h3 {
+    top: 4%;
+    left: 23%;
+    font-size: ;
+  }
+
+  .subheadings {
+    font-size: 1.3rem;
+  }
+
+  .moreFromMyspace {
+    background-color: #e0e0e0;
+    width: 16rem;
+    height: 18rem;
+  }
+
+  .moreFromMyspace img {
+    width: 14rem;
+  }
+  .moreFromMyspace h4 {
+    font-size: 1rem;
+  }
+
+  .moreFromMyspace p {
+    font-size: 15px;
+  }
+
+  .ads-container {
+    width: 100%;
+  }
+
+  .ads1 {
+    width: 0;
+    height: 0;
+  }
+
+  /* .ads-h4 {
+    font-size: 1.8rem;
+  } */
+
+  .freshDeals-section {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 0;
+    height: 165rem;
+  }
+
+  .freshDeals-section h3 {
+    position: absolute;
+    left: 33%;
+    top: 1%;
+  }
+
+  /* .freshDeals {
+    width: 70%;
+    height: ;
+  } */
+
+  /* .freshDeals img {
+    width: 9rem;
+    height: 8rem;
+  } */
+
+  .freshDeals-container {
+    grid-template-columns: 1fr;
+    top: 2%;
+    left: 12.5%;
+  }
+
+  .flyer {
+    width: 95%;
+    height: 25rem;
+  }
+
+  .flyer img {
+    visibility: hidden;
+  }
+
+  .flyer-text {
+    width: 80%;
+    left: 15%;
+    top: 18%;
+  }
+
+  .flyer-text H4 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .flyer-text p {
+    font-size: 1rem;
+  }
+
+  .flyer-image img {
+    width: 0;
+    height: 0;
+  }
+
+  /*my space*/
+
+  .mispace {
+    margin-top: 2rem;
+    /* background-color: red; */
+  }
+
+  .myspace-mobile-container {
+    width: 100%;
+    height: 34rem;
+  }
+
+  .smartphone {
+    height: 0;
+    width: 0;
+  }
+
+  .myspace-mobile {
+    width: 90%;
+  }
+
+  .myspace-mobile h4 {
+    line-height: 3rem;
+  }
+  .myspace-mobile img {
+    width: 40%;
+    height: 3rem;
+  }
+
+  .myspace-contact {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .center {
+    width: 90%;
+    /* background-color: red; */
+    top: 1%;
+    left: 5%;
+  }
+
+  .center p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .center h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8em;
+  }
+
+  #email {
+    width: 7rem;
+    height: 2rem;
+    position: absolute;
+    left: 1%;
+  }
+  #email::placeholder {
+    visibility: hidden;
+  }
+
+  .center button {
+    width: 7rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 80rem;
+  }
+
+  /* .supp {
+    margin-top: 0;
+  } */
+
+  /* .deals {
+  } */
+
+  .email {
+    width: 40%;
+  }
+
+  .email::placeholder {
+    visibility: hidden;
+  }
+
+  .connect {
+    top: 75%;
+  }
+}
+/*maxwidth 600px*/
+@media only screen and (min-width: 600px) {
   body {
     overflow-x: hidden;
   }
