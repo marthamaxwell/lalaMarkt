@@ -1230,6 +1230,7 @@ button:hover {
   .myspace-mobile {
     width: 90%;
     height: 30rem;
+    overflow-y: hidden;
   }
 
   .myspace-mobile h4 {
@@ -1243,6 +1244,7 @@ button:hover {
   .myspace-contact {
     width: 100%;
     height: 14rem;
+    overflow-y: hidden;
   }
 
   .center {
