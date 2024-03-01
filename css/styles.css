@@ -1288,7 +1288,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
-    height: 80rem;
+    height: 60rem;
     padding-left: 2rem;
   }
 
@@ -1308,7 +1308,7 @@ button:hover {
   }
 
   .connect {
-    top: 70%;
+    top: 75%;
   }
 
   .connect h5 {
