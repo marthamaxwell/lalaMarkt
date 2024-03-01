@@ -961,13 +961,14 @@ button:hover {
   }
 
   .nav__brand h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: absolute;
     left: 5%;
+    overflow-y: hidden;
   }
 
   .nav__cart img {
-    margin-left: 2rem;
+    margin-left: 1.8rem;
     position: absolute;
     top: 8%;
   }
@@ -1163,6 +1164,7 @@ button:hover {
 
   .freshDeals {
     max-height: 17.3rem;
+    overflow-y: hidden;
   }
 
   /* .freshDeals img {
@@ -1170,6 +1172,9 @@ button:hover {
     height: 8rem;
   } */
 
+  .topTexts h4 {
+    font-size: 1.1rem;
+  }
   .freshDeals-container {
     grid-template-columns: 1fr;
     top: 2%;
@@ -1302,6 +1307,10 @@ button:hover {
 
   .connect {
     top: 75%;
+  }
+
+  .connect h5 {
+    font-size: 1.1rem;
   }
 
   .address,

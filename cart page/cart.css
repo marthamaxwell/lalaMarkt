@@ -488,9 +488,10 @@ button:hover {
   }
 
   .nav__brand h1 {
-    font-size: 1rem;
+    font-size: 1.8rem;
     position: absolute;
     left: 5%;
+    overflow-y: hidden;
   }
 
   .nav__cart img {
@@ -585,9 +586,11 @@ button:hover {
 
   .connect {
     top: 75%;
-    overflow-y: hidden;
   }
 
+  .connect h5 {
+    font-size: 1.1rem;
+  }
   .address,
   .support {
     margin-top: 0.5rem;
