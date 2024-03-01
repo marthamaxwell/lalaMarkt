@@ -950,7 +950,7 @@ button:hover {
     /* position: fixed;
     z-index: 1; */
     position: relative;
-    background-color: #cd6a01;
+    /* background-color: #cd6a01; */
   }
 
   .header-container__nav {
@@ -961,7 +961,7 @@ button:hover {
   }
 
   .nav__brand h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     position: absolute;
     left: 5%;
   }
@@ -1045,7 +1045,7 @@ button:hover {
     width: 70%;
     /* background-color: #256ee4; */
     left: 13%;
-    top: -2%;
+    top: -1%;
 
     height: 23rem;
   }
@@ -1161,10 +1161,9 @@ button:hover {
     top: 1%;
   }
 
-  /* .freshDeals {
-    width: 70%;
-    height: ;
-  } */
+  .freshDeals {
+    max-height: 17.3rem;
+  }
 
   /* .freshDeals img {
     width: 9rem;

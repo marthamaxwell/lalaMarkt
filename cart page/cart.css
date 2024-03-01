@@ -484,6 +484,7 @@ button:hover {
     background-color: white;
     flex-wrap: wrap;
     /* position: relative; */
+    overflow-y: hidden;
   }
 
   .nav__brand h1 {
@@ -517,6 +518,45 @@ button:hover {
     margin-right: 0;
   }
 
+  .cart-section {
+    width: 95%;
+    /* background-color: red; */
+    height: 25rem;
+    z-index: 1;
+    overflow-y: hidden;
+  }
+
+  .cartListItems,
+  .cartList {
+    width: 0;
+    height: 0;
+  }
+
+  .cartHeading {
+    width: 100%;
+    left: 1%;
+  }
+
+  .emptyCart-container {
+    width: 100%;
+    left: 1%;
+  }
+
+  .emptyCart {
+    width: 75%;
+    height: 18rem;
+    /* background-color: red; */
+    top: 5%;
+    left: 8%;
+  }
+
+  .emptyCart img {
+    width: 40%;
+  }
+
+  .emptyCart button {
+    width: 55%;
+  }
   /* footer */
 
   footer {
@@ -545,6 +585,7 @@ button:hover {
 
   .connect {
     top: 75%;
+    overflow-y: hidden;
   }
 
   .address,
