@@ -500,138 +500,92 @@ button:hover {
   color: #141414;
 }
 
-/* ======================================MEDIA QUERY============================== */
+/* media query for mobile */
 
-@media only screen and (max-width: 750px) {
-  body {
+@media only screen and (max-width: 400px) {
+  * {
     overflow-x: hidden;
   }
 
-  .header-container__nav {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
+  .header-container {
+    width: 100%;
+    height: 40%;
+    /* position: fixed;
+    z-index: 1; */
     position: relative;
-
-    /* background-color: yellow; */
+    background-color: #cd6a01;
   }
 
-  nav a {
-    margin-right: 1rem;
+  .header-container__nav {
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+    /* position: relative; */
   }
 
   .nav__brand h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-
+    font-size: 1rem;
     position: absolute;
     left: 5%;
-    top: 55%;
   }
-  /* .query-btn {
-    width: 7.6875rem;
-    height: 3.3125rem;
-    border: 1px solid white;
-    background-color: #256ee4;
-    border-radius: 0.3125rem;
-    color: #256ee4;
-    margin: 0 5px;
-    cursor: pointer;
-  } */
+
+  .nav__cart img {
+    margin-left: 2rem;
+    position: absolute;
+    top: 8%;
+  }
+
+  .nav__cart a {
+    visibility: hidden;
+  }
 
   .search-bar {
-    width: 16rem;
-
-    margin-left: 33rem;
-
-    position: relative;
+    visibility: hidden;
+    /* margin-left: 5rem;
+    width: 5%; */
   }
 
-  input {
-    width: 8rem;
-  }
-
-  ::placeholder {
-    visibility: collapse;
-  }
-
+  .nav__btns,
   .nav__dropdown {
     visibility: hidden;
   }
 
-  .nav__cart {
-    visibility: collapse;
-  }
-
   nav a {
-    margin-right: 0.5rem;
+    margin-right: 0;
   }
 
-  .form-container {
-    flex-wrap: wrap;
-    width: 100%;
-    height: 55rem;
-  }
+  /* footer */
 
-  .form,
-  .form-address {
-    margin-left: 6rem;
-  }
-  .right-small {
-    left: 65%;
-    top: 9%;
-  }
-
-  .big,
-  .left-small,
-  .right-top-small {
-    visibility: hidden;
-  }
-
-  .myspace-mobile-container {
-    width: 100%;
-    height: 30rem;
-  }
-
-  .myspace-mobile {
-    left: 2%;
-  }
-
-  .smartphone {
-    width: 0rem;
-    height: 0rem;
-    visibility: hidden;
-  }
   footer {
-    /* background-color: red; */
-    flex-wrap: wrap;
-    height: 40rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 80rem;
+    padding-left: 2rem;
   }
 
-  /* .together1 {
-  position: absolute;
-  top: 10%;
-  left: 1%;
-} */
-
-  .brand {
-    position: absolute;
-    bottom: 60%;
-    margin-bottom: 0;
-  }
-
-  .deals {
+  /* .supp {
     margin-top: 0;
-    margin-bottom: 0.5rem;
-    position: absolute;
-    bottom: 25%;
+  } */
+
+  /* .deals {
+  } */
+
+  .email {
+    width: 40%;
+  }
+
+  .email::placeholder {
+    visibility: hidden;
   }
 
   .connect {
-    bottom: 10%;
-    left: 22%;
+    top: 75%;
   }
 
-  .fab {
-    margin-left: 2rem;
+  .address,
+  .support {
+    margin-top: 0.5rem;
   }
 }

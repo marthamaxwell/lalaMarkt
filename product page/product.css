@@ -7,16 +7,18 @@
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  background-color: #f2f7ff;
 }
 /* ======================================HEADER================================================ */
 
 .header-container {
-  width: 100vw;
-  height: 30vh;
+  width: 100%;
+  height: 30%;
+  background-color: white;
 }
 
 .header-container__nav {
-  width: 90%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -68,6 +70,7 @@ body {
   left: 10%; */
   margin-right: 0.5rem;
   border: 0;
+  cursor: pointer;
 }
 
 .search-bar img {
@@ -141,6 +144,7 @@ input {
   border-radius: 0.3125rem;
   color: #256ee4;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .btn {
@@ -183,6 +187,241 @@ a:active {
   border: none;
   background: transparent;
   color: #7a7a7a;
+}
+
+/* product content*/
+
+.sub-heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #7a7a7a;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.productContent-container {
+  width: 80%;
+  height: 45rem;
+  background-color: white;
+  position: relative;
+  margin: auto;
+}
+
+.positioned-img {
+  position: absolute;
+  top: 36.5%;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+
+.positioned-img img {
+  width: 123px;
+  height: 60px;
+}
+
+.productDetails {
+  position: absolute;
+  left: 44%;
+  top: 2%;
+}
+.semo-img {
+  width: 300x;
+  height: 250px;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.drs {
+  width: 40%;
+  height: 32px;
+  background-color: white;
+  margin: auto;
+  /* width: 476px;
+  height: 32px; */
+  color: #7a7a7a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description {
+  position: absolute;
+  top: 59%;
+}
+
+.dSr-container {
+  width: 80%;
+  height: 220px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #7a7a7a;
+}
+
+.drs-text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.float {
+  float: right;
+  margin-right: 5%;
+}
+
+.productDetails h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ratings {
+  color: #fe9b0e;
+  font-size: 1rem;
+}
+
+.seller {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}
+
+.productDetails p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-bottom: 0.3rem;
+}
+
+.productDetails h5 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.0162em;
+  margin-bottom: 0.5rem;
+}
+.lineThru {
+  text-decoration: line-through;
+}
+
+.dicount {
+  width: 2.8rem;
+  height: 1.375rem;
+  background-color: #c9ddff;
+  border-radius: 5px;
+  position: absolute;
+  top: 47%;
+  left: 46%;
+  text-align: center;
+  padding: 2px;
+}
+
+.productDetails button {
+  width: 442px;
+  height: 53px;
+  color: white;
+  background-color: #256ee4;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.share {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-top: 0.8rem;
+}
+
+.drs h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+/*similar products*/
+.similarProducts-container {
+  width: 85%;
+  height: 23rem;
+  /* background-color: red; */
+  margin: 2.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.similarProducts-container h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+
+.similarProducts {
+  width: 277px;
+  height: 293px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.similarProducts img {
+  /* width: 266px;
+  width: 168px; */
+  margin-top: 0.5rem;
+}
+
+.products a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.products {
+  margin-top: 1rem;
+  padding-left: 8px;
+}
+
+.products h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #141414;
+}
+
+.products p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.0162em;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.dc {
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 
 /* =====================================FOOTER============================================ */
@@ -289,6 +528,7 @@ footer p {
   line-height: 1.8rem;
   letter-spacing: 0em;
   padding-bottom: 10px;
+  background-color: white;
 }
 
 button:hover {
@@ -299,4 +539,94 @@ button:hover {
 .support a {
   text-decoration: none;
   color: #141414;
+}
+
+/* media query for mobile */
+
+@media only screen and (max-width: 400px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 40%;
+    /* position: fixed;
+    z-index: 1; */
+    position: relative;
+    background-color: #cd6a01;
+  }
+
+  .header-container__nav {
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+    /* position: relative; */
+  }
+
+  .nav__brand h1 {
+    font-size: 1rem;
+    position: absolute;
+    left: 5%;
+  }
+
+  .nav__cart img {
+    margin-left: 2rem;
+    position: absolute;
+    top: 8%;
+  }
+
+  .nav__cart a {
+    visibility: hidden;
+  }
+
+  .search-bar {
+    visibility: hidden;
+    /* margin-left: 5rem;
+    width: 5%; */
+  }
+
+  .nav__btns,
+  .nav__dropdown {
+    visibility: hidden;
+  }
+
+  nav a {
+    margin-right: 0;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 80rem;
+    padding-left: 2rem;
+  }
+
+  /* .supp {
+    margin-top: 0;
+  } */
+
+  /* .deals {
+  } */
+
+  .email {
+    width: 40%;
+  }
+
+  .email::placeholder {
+    visibility: hidden;
+  }
+
+  .connect {
+    top: 75%;
+  }
+
+  .address,
+  .support {
+    margin-top: 0.5rem;
+  }
 }

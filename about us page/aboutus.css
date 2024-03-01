@@ -489,79 +489,65 @@ button:hover {
   color: #141414;
 }
 
-/*======================================MEDIA
-  QUERY==============================
-  */
+/* media query for mobile */
 
-@media only screen and (max-width: 750px) {
-  body {
+@media only screen and (max-width: 400px) {
+  * {
     overflow-x: hidden;
   }
 
-  .header-container__nav {
-    /* display: grid;
-      grid-template-columns: 1fr 1fr; */
+  .header-container {
+    width: 100%;
+    height: 40%;
+    /* position: fixed;
+    z-index: 1; */
     position: relative;
-
-    /* background-color: yellow; */
+    background-color: #cd6a01;
   }
 
-  nav a {
-    margin-right: 1rem;
-  }
-
-  .nav__brand {
+  .header-container__nav {
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+    /* position: relative; */
   }
 
   .nav__brand h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-
+    font-size: 1rem;
     position: absolute;
     left: 5%;
-    top: 55%;
   }
-  /* .query-btn {
-      width: 7.6875rem;
-      height: 3.3125rem;
-      border: 1px solid white;
-      background-color: #256ee4;
-      border-radius: 0.3125rem;
-      color: #256ee4;
-      margin: 0 5px;
-      cursor: pointer;
-    } */
+
+  .nav__cart img {
+    margin-left: 2rem;
+    position: absolute;
+    top: 8%;
+  }
+
+  .nav__cart a {
+    visibility: hidden;
+  }
 
   .search-bar {
-    width: 16rem;
-
-    margin-left: 33rem;
-
-    position: relative;
+    visibility: hidden;
+    /* margin-left: 5rem;
+    width: 5%; */
   }
 
-  .search-bar button,
-  .search-bar img {
-  }
-
-  input {
-    width: 8rem;
-  }
-
-  ::placeholder {
-    visibility: collapse;
-  }
-
+  .nav__btns,
   .nav__dropdown {
     visibility: hidden;
   }
 
-  .nav__cart {
-    visibility: collapse;
+  nav a {
+    margin-right: 0;
   }
 
-  nav a {
-    margin-right: 0.5rem;
+  /* what are we*/
+
+  .whoAreWe-img img {
+    width: 0;
+    height: 0;
   }
 
   .whoAreWe-container {
@@ -570,29 +556,33 @@ button:hover {
   }
 
   .whoAreWe-intro {
-    width: 90%;
-    left: 5%;
-    top: 10%;
+    width: 60%;
+    height: 14rem;
+    background-color: #256ee4;
+    margin: 0 auto;
+    top: 3%;
   }
-
   .whoAreWe-intro h4 {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 
   .textImg-container {
-    flex-wrap: wrap;
-    top: 23%;
+    width: 100%;
+    background-color: red;
+    margin: 1rem auto;
+    height: 50rem;
+    top: 25%;
   }
 
+  /* what we do*/
   .whatWeDo-Container {
     width: 100%;
-
-    /* background-color: red; */
-    height: 22rem;
+    height: 30rem;
+    background-color: #f2f7ff;
   }
 
-  .whatWeDoH4 {
-    margin-bottom: 1.12rem;
+  .tansactions {
+    height: 50rem;
   }
 
   .whatWeDo-Container img {
@@ -600,59 +590,59 @@ button:hover {
     height: 0;
   }
 
-  .marketPlace-container {
-    margin: 2rem 0;
+  .whatWeDoH4 {
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
+  /* meet the team */
   .meetTeam-container {
-    width: 100%;
-    height: 75rem;
-    margin-right: 1rem;
+    width: 90%;
+    height: 125rem;
     /* background-color: red; */
   }
 
   .meetTeam {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
+    grid-template-columns: 1fr;
+    margin: 3rem 0 auto;
+  }
+  .meetTeam img {
+    width: 18rem;
+    height: 18rem;
   }
 
-  .meetTeam img {
-    width: 90%;
-    height: 90%;
-  }
+  /* footer */
 
   footer {
-    /* background-color: red; */
-    flex-wrap: wrap;
-    height: 40rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 80rem;
+    padding-left: 2rem;
   }
 
-  /* .together1 {
-    position: absolute;
-    top: 10%;
-    left: 1%;
+  /* .supp {
+    margin-top: 0;
   } */
 
-  .brand {
-    position: absolute;
-    bottom: 60%;
-    margin-bottom: 0;
+  /* .deals {
+  } */
+
+  .email {
+    width: 40%;
   }
 
-  .deals {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    position: absolute;
-    bottom: 25%;
+  .email::placeholder {
+    visibility: hidden;
   }
 
   .connect {
-    bottom: 10%;
-    left: 22%;
+    top: 75%;
   }
 
-  .fab {
-    margin-left: 2rem;
+  .address,
+  .support {
+    margin-top: 0.5rem;
   }
 }

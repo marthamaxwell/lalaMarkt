@@ -164,7 +164,7 @@ input {
 .header-container__2ndnav {
   height: 1.8125rem;
   background-color: white;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 12px;
 }
 
