@@ -559,7 +559,7 @@ button:hover {
   .whoAreWe-intro {
     width: 60%;
     height: 14rem;
-    background-color: #256ee4;
+    /* background-color: #256ee4; */
     margin: 0 auto;
     top: 3%;
   }
@@ -569,7 +569,7 @@ button:hover {
 
   .textImg-container {
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin: 1rem auto;
     height: 50rem;
     top: 25%;
@@ -598,14 +598,16 @@ button:hover {
 
   /* meet the team */
   .meetTeam-container {
-    width: 90%;
+    width: 95%;
     height: 125rem;
     /* background-color: red; */
   }
 
   .meetTeam {
     grid-template-columns: 1fr;
-    margin: 3rem 0 auto;
+    margin-left: 6.5%;
+    width: 100%;
+    /* background-color: red; */
   }
   .meetTeam img {
     width: 18rem;
