@@ -25,6 +25,7 @@ body {
   justify-content: space-around;
   padding-top: 4rem;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 .nav__brand img {
@@ -155,13 +156,13 @@ input {
 .line {
   width: 100%;
   border: 1px solid #e0e0e0;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .header-container__2ndnav {
   height: 1.8125rem;
-
-  margin: 0 auto;
+  padding: 12px 0;
+  /* margin: 0 auto; */
 }
 
 nav {
@@ -424,6 +425,14 @@ a:active {
   left: 5%;
 }
 
+.menuBtn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 30px;
+  visibility: hidden;
+}
+
 /* =====================================FOOTER============================================ */
 
 footer {
@@ -547,21 +556,82 @@ button:hover {
   * {
     overflow-x: hidden;
   }
+  .body {
+    /* position: relative; */
+    height: 100%;
+  }
 
   .header-container {
     width: 100%;
-    height: 40%;
-    /* position: fixed;
-    z-index: 1; */
-    position: relative;
-    /* background-color: #cd6a01; */
+    /* height: 100vh; */
   }
 
   .header-container__nav {
     width: 100%;
+    /* overflow: hidden; */
     background-color: white;
-    flex-wrap: wrap;
-    /* position: relative; */
+    height: 30%;
+  }
+
+  .nav__brand h1 {
+    position: absolute;
+    top: 4%;
+    /* width: 100px; */
+  }
+
+  .nav__dropdown {
+    margin: 0px auto;
+  }
+  .nav__brand {
+    width: 50%;
+    position: absolute;
+  }
+
+  .nav__dropdown label {
+    color: white;
+  }
+
+  .nav__dropdown select {
+    color: white;
+  }
+
+  .nav__cart a {
+    color: white;
+  }
+
+  .nav__cart img {
+    color: white;
+    margin: 0;
+  }
+  .nav__btns {
+    /* width: 4rem;
+    height: 2rem; */
+  }
+  .nav__cart {
+    flex-direction: column;
+    height: 20%;
+    /* background-color: #256ee4; */
+  }
+
+  .menuBtn {
+    visibility: visible;
+  }
+
+  .nav__search.active {
+    margin-top: 0px;
+  }
+
+  .nav__search {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #256ee4;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1600px;
   }
 
   .nav__brand h1 {
@@ -572,24 +642,9 @@ button:hover {
   }
 
   .nav__cart img {
-    margin-left: 2rem;
+    margin-left: 1.8rem;
     position: absolute;
     top: 8%;
-  }
-
-  .nav__cart a {
-    visibility: hidden;
-  }
-
-  .search-bar {
-    visibility: hidden;
-    /* margin-left: 5rem;
-    width: 5%; */
-  }
-
-  .nav__btns,
-  .nav__dropdown {
-    visibility: hidden;
   }
 
   nav a {

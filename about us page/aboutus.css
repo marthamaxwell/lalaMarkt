@@ -23,6 +23,7 @@ body {
   justify-content: space-around;
   padding-top: 4rem;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 .nav__brand img {
@@ -151,12 +152,12 @@ input {
 .line {
   width: 100%;
   border: 1px solid #e0e0e0;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .header-container__2ndnav {
   height: 1.8125rem;
-
+  padding: 12px 0;
   margin: 0 auto;
 }
 
@@ -373,6 +374,14 @@ li {
   width: 23rem;
   height: 28rem;
 }
+
+.menuBtn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 30px;
+  visibility: hidden;
+}
 /* =================================FOOTER================================= */
 
 footer {
@@ -491,7 +500,7 @@ button:hover {
 
 /* media query for mobile */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   * {
     overflow-x: hidden;
   }
@@ -533,6 +542,27 @@ button:hover {
     visibility: hidden;
     /* margin-left: 5rem;
     width: 5%; */
+  }
+
+  .menuBtn {
+    visibility: visible;
+  }
+
+  .nav__search.active {
+    margin-top: 0px;
+  }
+
+  .nav__search {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #256ee4;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1600px;
   }
 
   .nav__btns,
@@ -655,5 +685,20 @@ button:hover {
   .address,
   .support {
     margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 780) {
+  * {
+    overflow: hidden;
+  }
+
+  .whoAreWe-container {
+    width: 100%;
+  }
+
+  .whoAreWe-intro {
+    left: 5%;
+    background-color: red;
   }
 }

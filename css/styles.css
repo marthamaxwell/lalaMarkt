@@ -12,7 +12,7 @@ body {
 
 .header-container {
   width: 100%;
-  height: 30%;
+  height: 30%S;
   /* position: fixed;
   z-index: 1; */
   /* background-color: #cd6a01; */
@@ -165,7 +165,7 @@ input {
   height: 1.8125rem;
   background-color: white;
   /* margin: 0 auto; */
-  padding-top: 12px;
+  padding: 12px 0;
 }
 
 nav {
@@ -226,7 +226,6 @@ a:active {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 0.5rem;
-  line-height: 30px;
 }
 
 .hero-container__text {
@@ -823,6 +822,14 @@ b {
   margin-left: 0.5rem;
 }
 
+.menuBtn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 30px;
+  visibility: hidden;
+}
+
 /* =====================================FOOTER============================================ */
 
 footer {
@@ -938,26 +945,85 @@ button:hover {
   text-decoration: none;
   color: #141414;
 }
-
-@media only screen and (max-width: 400px) {
+/* ===============================================MEDIA QUERIES=========================== */
+@media only screen and (max-width: 480px) {
   * {
     overflow-x: hidden;
+  }
+  .body {
+    /* position: relative; */
+    height: 100%;
   }
 
   .header-container {
     width: 100%;
-    height: 40%;
-    /* position: fixed;
-    z-index: 1; */
-    position: relative;
-    /* background-color: #cd6a01; */
+    /* height: 100vh; */
   }
 
   .header-container__nav {
     width: 100%;
+    /* overflow: hidden; */
     background-color: white;
-    flex-wrap: wrap;
-    /* position: relative; */
+  }
+
+  .nav__brand h1 {
+    position: absolute;
+    top: 2%;
+    /* width: 100px; */
+  }
+
+  .nav__dropdown {
+    margin: 0px auto;
+  }
+  .nav__brand {
+    width: 50%;
+  }
+
+  .nav__dropdown label {
+    color: white;
+  }
+
+  .nav__dropdown select {
+    color: white;
+  }
+
+  .nav__cart a {
+    color: white;
+  }
+
+  .nav__cart img {
+    color: white;
+    margin: 0;
+  }
+  .nav__btns {
+    width: 4rem;
+    height: 2rem;
+  }
+  .nav__cart {
+    flex-direction: column;
+    height: 20%;
+    /* background-color: #256ee4; */
+  }
+
+  .menuBtn {
+    visibility: visible;
+  }
+
+  .nav__search.active {
+    margin-top: 0px;
+  }
+
+  .nav__search {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #256ee4;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1600px;
   }
 
   .nav__brand h1 {
@@ -971,21 +1037,6 @@ button:hover {
     margin-left: 1.8rem;
     position: absolute;
     top: 8%;
-  }
-
-  .nav__cart a {
-    visibility: hidden;
-  }
-
-  .search-bar {
-    visibility: hidden;
-    /* margin-left: 5rem;
-    width: 5%; */
-  }
-
-  .nav__btns,
-  .nav__dropdown {
-    visibility: hidden;
   }
 
   nav a {
@@ -1136,8 +1187,11 @@ button:hover {
     font-size: 15px;
   }
 
+  /*ADS*/
+
   .ads-container {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .ads1 {
@@ -1182,7 +1236,8 @@ button:hover {
   }
 
   .flyer {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
     height: 25rem;
   }
 
@@ -1192,6 +1247,7 @@ button:hover {
 
   .flyer-text {
     width: 90%;
+
     left: 15%;
     top: 18%;
   }
@@ -1199,6 +1255,7 @@ button:hover {
   .flyer-text H4 {
     font-size: 2.5rem;
     line-height: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .flyer-text p {
@@ -1214,13 +1271,15 @@ button:hover {
 
   .mispace {
     margin-top: 2rem;
+    height: 60rem;
     /* background-color: red; */
   }
 
   .myspace-mobile-container {
     width: 100%;
-    height: 34rem;
-    overflow-y: hidden;
+    height: 35rem;
+    background-color: #da850d;
+    position: relative;
   }
 
   .smartphone {
@@ -1231,6 +1290,7 @@ button:hover {
   .myspace-mobile {
     width: 90%;
     height: 30rem;
+    /* background-color: red; */
   }
 
   .myspace-mobile h4 {
@@ -1243,15 +1303,14 @@ button:hover {
 
   .myspace-contact {
     width: 100%;
-    height: 14rem;
+    height: 16rem;
   }
 
   .center {
     width: 90%;
     /* background-color: red; */
-    top: 5%;
+    top: 20%;
     left: 5%;
-    overflow-y: hidden;
   }
 
   .center p {
@@ -1268,10 +1327,12 @@ button:hover {
     width: 7rem;
     height: 2rem;
     position: absolute;
-    left: 1%;
+    left: 9%;
   }
   #email::placeholder {
-    visibility: hidden;
+    text-indent: 4px;
+    font-size: 0.7rem;
+    padding: 2px;
   }
 
   .center button {
@@ -1319,5 +1380,429 @@ button:hover {
   .address,
   .support {
     margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .menuBtn {
+    visibility: visible;
+  }
+
+  .nav__search.active {
+    margin-top: 0px;
+  }
+
+  .nav__search {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #256ee4;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1600px;
+  }
+
+  .hero {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-container__text {
+    width: 60%;
+
+    height: 30rem;
+  }
+
+  .hero-container__text h1 {
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .hero-container__img {
+    width: 40%;
+    /* visibility: hidden; */
+  }
+
+  .hero-container__text p {
+    font-size: 1.5rem;
+    /* visibility: hidden; */
+  }
+  /* top products */
+  .topproducts__payment {
+    width: 90%;
+    height: 15rem;
+    margin-top: 5rem;
+  }
+
+  .tp {
+    width: 75%;
+    flex-wrap: wrap;
+    height: 15rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .card-line {
+    display: none;
+  }
+
+  .card-text h1 {
+    font-size: 20px;
+  }
+  .card-text p {
+    font-size: 18px;
+  }
+
+  .topproducts-container {
+    height: 70rem;
+    width: 100%;
+  }
+
+  .topSellingPtoducts-container {
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+
+  .container {
+    top: 30%;
+  }
+
+  /* my space */
+  .moreFromMyspace-container {
+    width: 100%;
+    height: 53rem;
+    /* background-color: yellow; */
+  }
+
+  .mySpace {
+    width: 100%;
+    display: grid;
+    /* background-color: red; */
+    height: 40rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    top: 15%;
+  }
+
+  .moreFromMyspace-container h3 {
+    top: 10%;
+  }
+
+  .moreFromMyspace h4 {
+    font-size: 1rem;
+  }
+
+  .moreFromMyspace p {
+    font-size: 16px;
+  }
+
+  /* ads */
+  .ads1,
+  .ads2,
+  .ads3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ads-container {
+    height: 60rem;
+  }
+
+  /* freshDeals */
+  .freshDeals-container {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    top: 8%;
+  }
+  .freshDeals {
+    height: 15rem;
+  }
+
+  .freshDeals img {
+    height: 8rem;
+  }
+
+  .freshDeals-section {
+    width: 100%;
+    height: 90rem;
+    /* background-color: red; */
+  }
+  .freshDeals-section h3 {
+    left: 40%;
+  }
+
+  /* flyer */
+
+  .flyer {
+    height: 30rem;
+  }
+  .flyer-image {
+    display: none;
+  }
+
+  .flyer img {
+    display: none;
+  }
+
+  .flyer-text {
+    left: 15%;
+    height: 25rem;
+    /* background-color: red; */
+    width: 80%;
+  }
+
+  .flyer-text H4 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  .flyer-text p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  .flyer-text button {
+    /* width: 40%;
+    height: 20%; */
+  }
+
+  /* mispace */
+  .mispace {
+    /* background-color: red; */
+    width: 100%;
+  }
+
+  .myspace-mobile-container {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+  .myspace-mobile {
+    /* background-color: #da850d; */
+    width: 90%;
+    height: 21rem;
+  }
+
+  .myspace-mobile h4 {
+    /* font-size: 2rem;*/
+    line-height: 3rem;
+  }
+  .smartphone {
+    display: none;
+  }
+
+  .myspace-contact {
+    width: 90%;
+  }
+
+  .center {
+    left: 5%;
+    width: 90%;
+  }
+  .center h4 {
+    line-height: 2.5rem;
+  }
+
+  .center p {
+    font-size: 1.3rem;
+  }
+
+  /* footer */
+
+  footer {
+    flex-wrap: wrap;
+    height: 40rem;
+    position: relative;
+  }
+
+  footer h5 {
+    line-height: 2rem;
+  }
+  .deals {
+    position: absolute;
+    top: 45%;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1200px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .search-bar {
+    width: 10rem;
+    margin: 0;
+  }
+
+  .search-bar button,
+  .search-bar img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .nav__cart {
+    /* height: 4rem; */
+  }
+
+  .nav__brand {
+    /* width: 40%;
+    margin: 0; */
+  }
+
+  .hero {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .hero-container__text {
+    width: 60%;
+    height: 30rem;
+    margin-top: 2rem;
+    /* background-color: red; */
+    margin-left: 3rem;
+  }
+
+  .hero img {
+    height: 40rem;
+  }
+
+  /* top products */
+  .topproducts__payment {
+    width: 90%;
+    margin-top: 3%;
+  }
+
+  .tp {
+    width: 90%;
+  }
+
+  .topSellingPtoducts-container {
+    width: 95%;
+    /* flex-wrap: wrap; */
+    /* background-color: tomato; */
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  /* myspace */
+  .mySpace {
+    width: 100%;
+    /* background-color: red; */
+    margin: 0 auto;
+  }
+
+  /* ads */
+  .ads-container {
+    width: 100%;
+    height: 60rem;
+  }
+  .ads1 {
+    width: 95%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  .ads2,
+  .ads3 {
+    width: 85%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  /* {
+    margin: 0 auto;
+    width: 95%;
+  } */
+
+  /* .freshDeals */
+
+  .freshDeals-section {
+    width: 100%;
+    /* background-color: gold; */
+    height: 70rem;
+  }
+  .freshDeals-container {
+    width: 100%;
+    /* background-color: yellow; */
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  /* flyer */
+  .flyer-image {
+    width: 50%;
+    /* height: 10rem; */
+    left: 10%;
+    top: 3%;
+  }
+
+  .flyer img {
+    width: 55%;
+    height: 100%;
+  }
+
+  .flyer-text h4 {
+    font-size: 3rem;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  .flyer {
+    height: 19rem;
+    overflow: hidden;
+  }
+
+  /* mispace */
+
+  .myspace-mobile-container {
+    width: 100%;
+  }
+
+  .myspace-mobile {
+    width: 50%;
+    /* background-color: red; */
+    height: 21rem;
+    left: 2%;
+  }
+
+  .myspace-mobile h4 {
+    line-height: 3rem;
+  }
+
+  .smartphone {
+    width: 50%;
+    right: -3%;
+  }
+
+  .myspace-contact {
+    width: 90%;
+  }
+  .center {
+    left: 25%;
+  }
+
+  .center h4 {
+    line-height: 3rem;
+  }
+
+  .center p {
+    font-size: 1.2rem;
+  }
+
+  footer h5 {
+    line-height: 2rem;
   }
 }
